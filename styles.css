@@ -51,11 +51,78 @@ table {
 	font-style: normal;
 }
 
+*
+{
+	box-sizing: border-box;
+}
+
 body
 {
-	background-color: #F2F2F2;
-	font-family: 'Raleway';
-	color:
+	background: #FFFFFF;
+}
 
+.en_tête
+{
+	display: flex;
+	justify-content: space-between;
+}
+
+.principal
+{
+	display: flex;
+	flex-direction: row-reverse;;
+}
+
+.Le_plus_populaires
+{
+	display: flex;
+	flex-direction: column;
+}
+
+.cardpop
+{
+	background: #F2F2F2;
+	width: ;
+	height: ;
+	margin: ;
+}
+
+.Hébergement
+{
+	display: flex;
+	justify-content: center;
+}
+
+.cardheb
+{
+	background: #F2F2F2;
+	width: ;
+	height: ;
+	margin: ;
+}
+
+.carheb_image
+{
+	background-color: ;
+	height: ;
+	margin-bottom: ;
+	background-size: cover;
+}
+
+.cardheb-1
+{
+	background-image: url(images/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+}
+
+.Activités_à_Marseille
+{
+
+}
+
+
+.pied_de_page
+{
+	display: flex;
+	justify-content: space-between;
 }
 
