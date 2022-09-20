@@ -45,84 +45,132 @@ table {
 @font-face 
 {
     font-family: 'Raleway';
-    src: url('Raleway-VariableFont_wght.ttf') format('truetype'),
-		 url('Raleway-Italic-VariableFont_wght.ttf') format('truetype');  
+    src: url('fonts/Raleway-VariableFont_wght.ttf') format('truetype');  
 	font-weight: normal;
 	font-style: normal;
 }
 
 *
 {
+	font-family: 'Raleway';
+	background-color: #FFFFFF;
 	box-sizing: border-box;
-}
-
-body
-{
-	background: #FFFFFF;
 }
 
 .en_tête
 {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
+	align-items: center;
+	height: auto;
+}
+
+.logo_booki
+{
+	margin-right: auto;
+}
+
+.menu
+{
+	display: flex;
+	justify-content:space-between;
+	align-items: center;
+	height: auto;
+	font-family: 'Raleway';
+	font-size: small;
+}
+
+a
+{
+	text-decoration: none;
+	color: black;
+}
+
+a:hover
+{
+	text-decoration: overline;
+	color:#0065FC
+}
+
+.recherche
+{
+	font-family: 'Raleway';
+}
+
+.recherche h1
+{
+	font-size: large;
+	font-weight: bold;
+}
+
+.recherche p
+{
+	font-size: small;
+}
+
+.barre
+{
+	font-weight: bold;
+}
+
+.envoyer
+{
+	background-color: #0065FC;
+	color: #FFFFFF;
+	font: bold;
+}
+
+.filtre
+{
+	display: flex;
+	justify-content: left;
+	align-content: center;
+	font-weight: bold;
 }
 
 .principal
 {
 	display: flex;
-	flex-direction: row-reverse;;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	font-family: 'Raleway';
 }
 
 .Le_plus_populaires
 {
 	display: flex;
 	flex-direction: column;
+	background-color: #F2F2F2;
 }
 
 .cardpop
 {
-	background: #F2F2F2;
-	width: ;
-	height: ;
-	margin: ;
+	background: #FFFFFF
 }
 
 .Hébergement
 {
 	display: flex;
-	justify-content: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content:center ;
+	background-color: #F2F2F2;
 }
 
 .cardheb
 {
-	background: #F2F2F2;
-	width: ;
-	height: ;
-	margin: ;
+	background: #FFFFFF
 }
 
-.carheb_image
+.Activités
 {
-	background-color: ;
-	height: ;
-	margin-bottom: ;
-	background-size: cover;
+	font-family: 'Raleway';
 }
-
-.cardheb-1
-{
-	background-image: url(images/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
-}
-
-.Activités_à_Marseille
-{
-
-}
-
 
 .pied_de_page
 {
 	display: flex;
 	justify-content: space-between;
+	font-family: 'Raleway';
 }
 
