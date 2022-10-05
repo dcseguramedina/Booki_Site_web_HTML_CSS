@@ -161,12 +161,14 @@ header {
 	align-items: center;
 	width: 100%;
 	height: 80px;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 .logo_booki {
-	width: 6%;
+	width: 8%;
 	height: 50px;
-	margin-left: 40px;
+	margin-left: 30px;
 }
 
 nav {
@@ -175,7 +177,7 @@ nav {
 	align-items: center;
 	width: 18%;
 	height: 100px;
-	margin-right: 40px;	
+	margin-right: 50px;	
 }
 
 nav a {
@@ -193,26 +195,29 @@ nav a:hover
 
 .search {
 	width: 100%;
-	height: 250px;
-	padding: 2%;
+	height: 210px;
+	margin: 10px;
+	padding: 10px;
+	
 }
 
 .search h1 {
-	height: 30px;
-	padding: 10px;
+	height: 16px;
+	margin-left: 10px;
+	margin-bottom: 5px;	
 	font-weight: bold;
 }
 
 .search p {
-	height: 30px;
-	padding: 10px;
+	height: 16px;
+	margin-left: 10px;
+	margin-bottom: 5px;
 	font-size: small;
 }
 
 /*  The border on the icon is not working */
 #info {
-	height: 16px;
-	margin-right: 8px;
+	height: 16px;	
 	padding: 8px;
 	border-style: solid;
 	border-radius: 16px;	
@@ -223,18 +228,19 @@ nav a:hover
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 35%;
-	height: 50px;
-	padding: 10px;
+	width: 30%;
+	height: 60px;
+	margin-left: 10px;
+	margin-bottom: 5px;
 }
 
 /* Not the good writting if i use the class of the icon so I added an id */
 #location	{
 	width: 10%;
 	height: 45px;
-	padding: 16px;
+	padding: 14px;
 	border-style: none;
-	border-radius: 0.8em;
+	border-radius: 8px;
 	border-top-right-radius: 0;
 	border-bottom-right-radius: 0;
 	background-color: #F2F2F2;
@@ -264,7 +270,7 @@ nav a:hover
 	border-bottom-left-radius: 0;
 	background-color: #0065FC;
 	color: #FFFFFF;
-	font-size: medium;
+	font-size: small;
 	font-weight: bold;
 }
 
@@ -272,15 +278,15 @@ nav a:hover
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 75%;
+	width: 68%;
 	height: 60px;
-	padding-top: 24px;
+	margin-left: 10px;
+	margin-bottom: 5px;
 }
 
 /*  The title is not bold enough */
-.filter_title {
-	padding: 10px;
-	font-size: medium;
+.filter_title {	
+	font-size: small;
 	font-weight: bold;
 }
 
@@ -290,10 +296,11 @@ button {
 	align-items: center;
 	height: 35px;
 	margin: 10px;
-	padding-right: 10px;
+	padding-right: 4px;
 	border-style: solid;
 	border-radius: 24px;
-	font-size: medium;
+	border-color: #F2F2F2;
+	font-size: small;
 	font-weight: bold;
 }
 
@@ -311,30 +318,43 @@ button {
 	color: #0065FC;
 }
 
+button:hover {
+	transform: scale(1.1);
+	box-shadow: 0 8px 4px #F2F2F2;
+}
+
 /* Main section aspect */
 main {
 	display: flex;
 	flex-direction: row-reverse;
 	justify-content: space-around;
 	width: 100%;
-	height: 550px;
-	padding: 2%;	
+	height: 450px;
+	margin: 10px;
+	padding: 10px;
 }
 
 .popular {
+	display: flex;
+	flex-direction: column;
 	justify-content: space-around;
 	width: 33%;
-	height: 500px;	
-	padding: 2%;	
+	height: 425px;	
+	padding: 20px;	
 	border-style: none;
 	border-radius: 16px;
 	background-color: #F2F2F2
 }
 
 .section_title_popular {
+	display: flex;
 	justify-content: space-between;
 	background-color: #F2F2F2;
-	font-size: large;
+}
+
+.section_title_popular h1 {
+	background-color: #F2F2F2;
+	font-size: medium;
 	font-weight: bold;
 }
 
@@ -343,7 +363,7 @@ main {
 	justify-content: left;
 	width: 100%;
 	height: 100px;
-	margin-top: 24px;
+	margin-top: 16px;
 	border-style: none;
 	border-radius: 16px;
 	background: #FFFFFF
@@ -374,12 +394,13 @@ main {
 }
 
 .section_card_popular_description h2 {
+	margin-bottom: 5px;
 	font-size: small;
 	font-weight: bold;
 }
 
 .section_card_popular_description p {
-	margin-top: 8px;
+	margin-bottom: 24px;
 	font-size: x-small;
 }
 
@@ -399,17 +420,16 @@ main {
 	flex-direction: column;
 	justify-content: space-around;
 	width: 63%;
-	height: 500px;
-	padding: 2%;	
+	height: 425px;
+	padding: 20px;	
 	border-style: none;
 	border-radius: 16px;
 	background-color: #F2F2F2
 }
 
 .accommodation h1 {
-	padding-bottom: 15px;
 	background-color: #F2F2F2;
-	font-size: large;
+	font-size: medium;
 	font-weight: bold;
 }
 
@@ -417,14 +437,15 @@ main {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	align-content: space-around;
 	width: 100%;
-	height: 400px;
-	background-color: #F2F2F2
+	height: 350px;
+	background-color: #F2F2F2;
 }
 
 .section_card_accommodation {
 	width: 30%;
-	height: 180px;
+	height: 140px;
 	border-style: none;
 	border-radius: 16px;
 	background: #FFFFFF
@@ -432,8 +453,8 @@ main {
 
 .section_card_accommodation_image {
 	width: 100%;
-	height: 60%;
-	padding: 4px;	
+	height: 65%;
+	padding: 4px;
 	object-fit: cover; /* In order to keeps the aspect and fill the given dimentions */
 	border-style: none;
 	border-radius: 16px;
@@ -442,26 +463,39 @@ main {
 }
 
 .section_card_accommodation_description {
-	display: flex;
-	flex-direction: column;
 	width: 100%;
-	height: 40%;
-	padding: 8px;	
+	height: 35%;
+	padding-top: 2px;
+	padding-left: 8px;	
 	border-style: none;
 	border-radius: 16px;
 	border-top-left-radius: 0;
 	border-top-right-radius: 0;
+	background-color: #FFFFFF;
 }
 
 .section_card_accommodation_description h2 {
+	margin-bottom: 5px;
 	font-size: small;
 	font-weight: bold;
 }
 
-.section_card_accommodation_description p {
-	margin-top: 8px;
+/* THis is not working since is taken the values of ".accommodation p" at the end of the section
+
+.section_card_accommodation_description p { 
 	font-size: x-small;
 }
+*/
+
+.accommodation p {
+	margin-bottom: 5px;
+	font-size: x-small;
+}
+
+strong {
+	font-weight: bold;
+}
+
 
 .stars_icon_accommodation {
 	display: flex;
@@ -483,26 +517,29 @@ main {
 	color: #0065FC;
 }
 
-/*Add hoover */
-
-.accommodation p {
+.accommodation a {
 	background-color: #F2F2F2;
-	font-size: small;
+	text-decoration: none;
 	font-weight: bold;
+	color: black;
+}
+.accommodation a:hover {
+	color: #0065FC;
 }
 
 /* Section aspect */
 .activities {
 	justify-content: space-around;
 	width: 100%;
-	height: 500px;
-	padding: 2%;
+	height: 335px;
+	margin: 10px;
+	padding: 10px;
 }
 
 .activities h1 {
 	padding-left: 15px;
 	padding-bottom: 15px;
-	font-size: large;
+	font-size: medium;
 	font-weight: bold;
 }
 
@@ -510,25 +547,22 @@ main {
 	display: flex;
 	justify-content: space-around;
 	width: 100%;
-	height: 400px;
+	height: 280px;
 }
 
+.section_card_activities1, .section_card_activities4 {
+	width: 22.5%;
+	height: 250px;
+	box-shadow: 0 8px 4px #F2F2F2;
+	border-style: none;
+	border-radius: 16px;	
+}
 .section_card_activities_mini {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	width: 22.5%;
-	height: 380px;
-	padding-bottom: 1.5%;
-}
-
-.section_card_activities1, .section_card_activities4 {
-	width: 22.5%;
-	height: 380px;
-	box-shadow: 0 8px 4px #F2F2F2;
-	border-style: none;
-	border-radius: 16px;
-	
+	height: 250px;
 }
 
 .section_card_activities2, .section_card_activities6 {
@@ -536,16 +570,19 @@ main {
 	height: 50%;
 	box-shadow: 0 8px 4px #F2F2F2;
 	border-style: none;
-	border-radius: 16px;
-	
+	border-radius: 16px;	
 }
 
 .section_card_activities3, .section_card_activities5 {
 	width: 100%;
-	height: 35%;
+	height: 45%;
 	box-shadow: 0 8px 4px #F2F2F2;
 	border-style: none;
 	border-radius: 16px;	
+}
+
+.section_card_activities3, .section_card_activities6 {
+	margin-top: 18px;
 }
 
 .section_card_activities_image {
@@ -580,16 +617,16 @@ main {
 
 .section_card_activities_description_mini {
 	width: 100%;
-	height: 25%;
-	padding: 10px;
+	height: 20%;
+	padding: 5px;
 	border-style: none;
 	border-radius: 16px;
 	border-top-left-radius: 0;
 	border-top-right-radius: 0;
-	background-color: #000;
 }
 
-.section_card_activities_description h2 {
+.section_card_activities_description h2, .section_card_activities_description_mini h2 {
+	font-size: small;
 	font-weight: bold;
 }
 
@@ -608,24 +645,27 @@ footer {
 	justify-content: flex-start;
 	width: 100%;
 	height: 150px;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 10px;
 	background-color: #F2F2F2;
 	font-size: small;
 }
 
 .À_propos {
 	margin-right: 150px;
-	padding: 48px;
+	padding: 24px;
 	background-color: #F2F2F2;
 }
 
 .Nos_hébergements {
 	margin-right: 150px;
-	padding: 48px;
+	padding: 24px;
 	background-color: #F2F2F2;
 }
 
 .Assistance {
-	padding: 48px;
+	padding: 24px;
 	background-color: #F2F2F2;
 }
 
