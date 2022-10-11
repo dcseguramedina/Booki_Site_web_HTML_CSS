@@ -718,7 +718,7 @@ footer {
 	
 	.filter {
 		width: 100%;	
-	
+	}
 }
 
 /* Mobile version */
@@ -876,3 +876,4 @@ footer {
 	.nos_hébergements, .assistance {
 		padding-top: 0;
 	}
+} 
