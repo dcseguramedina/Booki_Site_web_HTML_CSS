@@ -1,4 +1,4 @@
-<!-- Nouveau site Booki : Desktop version -->
+<!-- Nouveau site Booki -->
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -14,12 +14,13 @@
 <body>
     <!-- Definition of the header content -->
     <header>
-        <!--<img> to add a single image to the header (logo) -->
         <img class="logo_booki" src="./images/logo/Booki.png" alt="Logo de Booki" />
         <nav>
             <!--The texts "Accommodations" and "Activities", located in the header, are links. They must lead respectively to the section "Accommodation in Marseille" and "Activities in Marseille" -->
-            <a href="#accommodation">Hébergement</a><br>
-            <a href="#activities">Activités</a>
+            <ul>
+                <li><a href="#accommodation">Hébergement</a></li>
+                <li><a href="#activities">Activités</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -27,21 +28,26 @@
     <section class="search">
         <h1>Trouvez votre hébergement pour les vacances de rêve</h1>
         <p>En plein centre ville ou en pleine nature</p>
-        <form class="search_form">
+        <form>
             <!-- The icons you will find along the site come from the Font Awesome library. We could't go through a CDN as indicated because the icons were downloading in the wrong way -->
             <i id=location class="fa-solid fa-location-dot"></i>
-            <input class="search_bar" type="search" placeholder="Marseille, France" />
-            <input class="submit" type="submit" value="Rechercher">
+            <input class="search_form" type="search" placeholder="Marseille, France">
+            <button class="search_texte" type="button">Rechercher</button>
+            <button class="search_icon" type="button"><i id="search_icon" class="fa-solid fa-magnifying-glass"></i></button>
         </form>
         <!-- Filters change their appearance on hover. However, they are not functional as requested -->
         <div class="filter">
             <h2 class="filter_title">Filtres</h2>
-            <button type="button"><i id="economic" class="fa-solid fa-money-bill-wave"></i>Économique</button>
-            <button type="button"><i id="family_friendly" class="fa-sharp fa-solid fa-child-reaching"></i>Familial</button>
-            <button type="button"><i id="romantic" class="fa-sharp fa-solid fa-heart"></i>Romantique</button>
-            <button type="button"><i id="pets_friendly" class="fa-sharp fa-solid fa-dog"></i>Animaux autorisés</button>
+            <button class="filter_button" type="button"><i id="economic" class="fa-solid fa-money-bill-wave"></i>Économique</button>
+            <button class="filter_button" type="button"><i id="family_friendly" class="fa-sharp fa-solid fa-child-reaching"></i>Familial</button>
+            <button class="filter_button" type="button"><i id="romantic" class="fa-sharp fa-solid fa-heart"></i>Romantique</button>
+            <button class="filter_button" type="button"><i id="pets_friendly" class="fa-sharp fa-solid fa-dog"></i>Animaux autorisés</button>
         </div>
-        <p><i id="info" class="fa-solid fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
+        <div class="info">
+            <i id="info_icon" class="fa-solid fa-info"></i>
+            <p>Plus de 500 logements sont disponibles dans cette ville</p>
+        </div>
+        
     </section>
 
     <!-- Definition of the main section content -->
@@ -81,7 +87,7 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
-                        <i id="stars_icon_popular_gray" class="fa-solid fa-star"></i>
+                        <i id="stars_icon_popular_gray1" class="fa-solid fa-star"></i>
                     </p>
                 </div>
             </div>
@@ -98,7 +104,7 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
-                        <i id="stars_icon_popular_gray" class="fa-solid fa-star"></i>
+                        <i id="stars_icon_popular_gray2" class="fa-solid fa-star"></i>
                     </p>
                 </div>
             </div>
@@ -122,7 +128,7 @@
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
-                                <i id="stars_icon_accommodation_gray" class="fa-solid fa-star"></i>
+                                <i id="stars_icon_accommodation_gray1" class="fa-solid fa-star"></i>
                             </p>
                         </div>
                     </a>
@@ -158,7 +164,7 @@
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
-                                <i id="stars_icon_accommodation_gray" class="fa-solid fa-star"></i>
+                                <i id="stars_icon_accommodation_gray2" class="fa-solid fa-star"></i>
                             </p>
                         </div>
                     </a>
@@ -175,8 +181,8 @@
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
-                                <i id="stars_icon_accommodation_gray" class="fa-solid fa-star"></i>
-                                <i id="stars_icon_accommodation_gray" class="fa-solid fa-star"></i>
+                                <i id="stars_icon_accommodation_gray3" class="fa-solid fa-star"></i>
+                                <i id="stars_icon_accommodation_gray4" class="fa-solid fa-star"></i>
                             </p>
                         </div>
                     </a>
@@ -194,7 +200,7 @@
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
-                                <i id="stars_icon_accommodation_gray" class="fa-solid fa-star"></i>
+                                <i id="stars_icon_accommodation_gray5" class="fa-solid fa-star"></i>
                             </p>
                         </div>
                     </a>
@@ -218,7 +224,7 @@
                     </a>
                 </div>
             </div>
-            <a href="#">Afficher plus</a>
+            <span><a href="#">Afficher plus</a></span>
         </section>
     </main>
 
@@ -296,7 +302,7 @@
 
     <!-- Definition of the footer content -->
     <footer>
-        <div class="À_propos">
+        <div class="à_propos">
             <h3>À propos</h3>
             <ul>
                 <li>Fonctionnement du site</li>
@@ -304,14 +310,14 @@
                 <li>Données et confidentialité</li>
             </ul>
         </div>
-        <div class="Nos_hébergements">
+        <div class="nos_hébergements">
             <h3>Nos hébergements</h3>
             <ul>
                 <li>Charte qualité</li>
                 <li>Soumettre votre hôtel</li>
             </ul>
         </div>
-        <div class="Assistance">
+        <div class="assistance">
             <h3>Assistance</h3>
             <ul>
                 <li>Centre d'aide</li>
