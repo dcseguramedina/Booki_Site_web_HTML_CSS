@@ -14,9 +14,11 @@
 <body>
     <!-- Definition of the header content -->
     <header>
-        <img class="logo_booki" src="./images/logo/Booki.png" alt="Logo de Booki" />
+        <img class="logo_booki" 
+             src="./images/logo/Booki.png" 
+             alt="Logo de Booki">
         <nav>
-            <!--The texts "Accommodations" and "Activities", located in the header, are links. They must lead respectively to the section "Accommodation in Marseille" and "Activities in Marseille" -->
+            <!--The texts "Accommodations" and "Activities", located in the header, are links. They are lead respectively to the section "Accommodation in Marseille" and "Activities in Marseille" -->
             <ul>
                 <li><a href="#accommodation">Hébergement</a></li>
                 <li><a href="#activities">Activités</a></li>
@@ -30,9 +32,9 @@
         <p>En plein centre ville ou en pleine nature</p>
         <form>
             <!-- The icons you will find along the site come from the Font Awesome library. We could't go through a CDN as indicated because the icons were downloading in the wrong way -->
-            <i id=location class="fa-solid fa-location-dot"></i>
+            <i id=location_icon class="fa-solid fa-location-dot"></i>
             <input class="search_form" type="search" placeholder="Marseille, France">
-            <button class="search_texte" type="button">Rechercher</button>
+            <button class="search_button" type="button">Rechercher</button>
             <button class="search_icon" type="button"><i id="search_icon" class="fa-solid fa-magnifying-glass"></i></button>
         </form>
         <!-- Filters change their appearance on hover. However, they are not functional as requested -->
@@ -47,7 +49,6 @@
             <i id="info_icon" class="fa-solid fa-info"></i>
             <p>Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
-        
     </section>
 
     <!-- Definition of the main section content -->
@@ -111,12 +112,12 @@
         </section>
 
         <!-- Definition of the accommodation section content -->
-        <!-- Each accommodation card is clickable in its entirety (not just the title). For now, the links are Empty as requested -->
+        <!-- Each accommodation card is clickable in its entirety and change its appearance on hover. For now, the links are empty as requested -->
         <section class="accommodation">
             <h1 id="accommodation">Hébergements à Marseille</h1>
             <div class="section_cards_accommodation">
                 <div class="section_card_accommodation">
-                    <a href="">
+                    <a href="#">
                         <img class="section_card_accommodation_image"
                             src="./images/accomodation/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
                             alt="Photo de chambre Auberge La Cannebiére">
@@ -134,7 +135,7 @@
                     </a>
                 </div>
                 <div class="section_card_accommodation">
-                    <a href="">
+                    <a href="#">
                         <img class="section_card_accommodation_image"
                             src="./images/accomodation/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
                             alt="Photo de chambre Hôtel du port">
@@ -152,7 +153,7 @@
                     </a>
                 </div>
                 <div class="section_card_accommodation">
-                    <a href="">
+                    <a href="#">
                         <img class="section_card_accommodation_image"
                             src="./images/accomodation/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg"
                             alt="Photo de chambre Hôtel Les mouettes">
@@ -170,7 +171,7 @@
                     </a>
                 </div>
                 <div class="section_card_accommodation">
-                    <a href="">
+                    <a href="#">
                         <img class="section_card_accommodation_image"
                             src="./images/accomodation/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
                             alt="Photo de chambre Hôtel de la mer">
@@ -188,7 +189,7 @@
                     </a>
                 </div>
                 <div class="section_card_accommodation">
-                    <a href="">
+                    <a href="#">
                         <img class="section_card_accommodation_image"
                             src="./images/accomodation/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
                             alt="Photo de chambre Auberge Le Panier">
@@ -206,7 +207,7 @@
                     </a>
                 </div>
                 <div class="section_card_accommodation">
-                    <a href="">
+                    <a href="#">
                         <img class="section_card_accommodation_image"
                             src="./images/accomodation/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
                             alt="Photo de chambre Hôtel chez Amina">
@@ -224,12 +225,12 @@
                     </a>
                 </div>
             </div>
-            <span><a href="#">Afficher plus</a></span>
+            <div class="show_more"><a href="#">Afficher plus</a></div>
         </section>
     </main>
 
     <!-- Definition of the activities section content -->
-    <!-- Each activities card is clickable in its entirety (not just the title). For now, the links are Empty as requested-->
+    <!-- Each activities card is clickable in its entirety and change its appearance on hover. For now, the links are empty as requested-->
     <section class="activities">
         <h1 id="activities">Activités à Marseille</h1>
         <div class="section_cards_activities">
@@ -304,27 +305,28 @@
     <footer>
         <div class="à_propos">
             <h3>À propos</h3>
-            <ul>
-                <li>Fonctionnement du site</li>
-                <li>Conditions générales de vente</li>
-                <li>Données et confidentialité</li>
+            <ul>                
+                <li><a href="#">Fonctionnement du site</a></li>              
+                <li><a href="#">Conditions générales de vente</a></li>
+                <li><a href="#">Données et confidentialité</a></li>
             </ul>
         </div>
         <div class="nos_hébergements">
             <h3>Nos hébergements</h3>
-            <ul>
-                <li>Charte qualité</li>
-                <li>Soumettre votre hôtel</li>
+            <ul>               
+                <li><a href="#">Charte qualité</a></li>
+                <li><a href="#">Soumettre votre hôtel</a></li>
             </ul>
         </div>
         <div class="assistance">
             <h3>Assistance</h3>
-            <ul>
-                <li>Centre d'aide</li>
-                <li>Nous contacter</li>
+            <ul>                
+                <li><a href="#">Centre d'aide</a></li>                              
+                <li><a href="#">Nous contacter</a></li>                
             </ul>
         </div>
     </footer>
+
 </body>
 
 </html>
