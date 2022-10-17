@@ -154,9 +154,10 @@ table {
 	background-color: #FFFFFF;
 }
 
-/* Desktop version */
+/***** Desktop version *****/
 
 /* Header aspect */
+
 header {
 	display: flex;
 	justify-content: space-between;
@@ -168,12 +169,12 @@ header {
 	width: 6%;
 	height: 100%;
 	margin-left: 40px;
-	padding-top: 30px;
 }
 
 .logo_booki_image {
 	width: 100%;
 	height: 100%;
+	padding-top: 30px;
 }
 
 nav {
@@ -212,13 +213,12 @@ nav ul li a:hover {
 .search {
 	width: 100%;
 	height: 16%;
-	padding: 20px;
+	padding: 30px;
 }
 
 .search h1 {
 	height: 1.6%;
-	margin-bottom: 10px;
-	margin-left: 15px;
+	margin-bottom: 10px;	
 	font-size: large;
 	font-weight: bold;
 }
@@ -226,16 +226,15 @@ nav ul li a:hover {
 .search p {
 	height: 1.6%;
 	margin-bottom: 10px;
-	margin-left: 15px;
 	font-size: medium;
 }
 
 form {
 	display: flex;
+	justify-content: center;
 	width: 30%;
 	height: 6%;
 	margin-bottom: 10px;
-	margin-left: 15px;
 }
 
 #location_icon {
@@ -243,7 +242,7 @@ form {
 	height: 40px;
 	padding: 14px;
 	border-style: none;
-	border-radius: 8px;
+	border-radius: 12px;
 	border-top-right-radius: 0;
 	border-bottom-right-radius: 0;
 	background-color: #F2F2F2;
@@ -252,7 +251,7 @@ form {
 .search_form {
 	width: 60%;
 	height: 40px;
-	padding: 16px;
+	padding-left: 16px;
 	border-style: solid;
 	border-right: none;
 	border-color: #F2F2F2;
@@ -288,6 +287,7 @@ form {
 }
 
 #search_icon {
+	display: none;
 	background-color: #0065FC;
 	color: #FFFFFF;
 }
@@ -296,13 +296,11 @@ form {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 68%;
+	width: 70%;
 	height: 60px;
 	margin-bottom: 10px;
-	margin-left: 15px;
 }
 
-/*  The title is not bold enough */
 .filter_title {
 	font-size: medium;
 	font-weight: bold;
@@ -313,7 +311,7 @@ form {
 	align-items: center;
 	height: 35px;
 	margin: 10px;
-	padding-right: 4px;
+	padding-right: 16px;
 	border-style: solid;
 	border-radius: 24px;
 	border-color: #F2F2F2;
@@ -342,23 +340,20 @@ form {
 
 .info {
 	display: flex;
+	justify-content: flex-start;
 	align-items: center;
-	padding-top: 7px;
-	margin-left: 15px;
+	width: 100%;
 }
 
-.info p {
-	margin-top: 4px;
-}
-
-/*  The border on the icon is not working */
 #info_icon {
 	width: 20px;
-	height: 20px;
-	padding-left: 7px;
-	border-style: solid;
-	border-color: #F2F2F2;
+	height: 20px;	
+	margin-bottom: 10px;
+	padding-top: 2px;
+	padding-left: 6px;
+	border: 2px solid #F2F2F2;
 	border-radius: 16px;
+	font-size: x-small;
 	color: #0065FC;
 }
 
@@ -371,11 +366,12 @@ main {
 	height: 36%;
 }
 
+/* Section popular aspect */
 .popular {
 	width: 30%;
 	height: 36%;
-	padding: 30px;
 	margin-right: 30px;
+	padding: 30px;	
 	border-style: none;
 	border-radius: 16px;
 	background-color: #F2F2F2
@@ -401,8 +397,8 @@ main {
 	display: flex;
 	justify-content: left;
 	width: 100%;
-	height: 100px;
-	margin-top: 30px;
+	height: 108px;
+	margin-top: 20px;
 	border-style: none;
 	border-radius: 16px;
 	background: #FFFFFF
@@ -424,7 +420,7 @@ main {
 	display: flex;
 	flex-direction: column;
 	width: 60%;
-	height: 100%;
+	height: auto;
 	padding: 16px;
 	border-style: none;
 	border-radius: 16px;
@@ -439,14 +435,15 @@ main {
 }
 
 .section_card_popular_description p {
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 	font-size: small;
 }
 
 .stars_icon_popular {
 	display: flex;
 	justify-content: flex-start;
-	width: 30%;
+	width: 40%;
+	font-size: x-small;
 	color: #0065FC;
 }
 
@@ -455,8 +452,9 @@ main {
 	color: #F2F2F2;
 }
 
+/* Section accommodation aspect */
 .accommodation {
-	width: 62%;
+	width: 63%;
 	height: 36%;
 	padding: 30px;
 	margin-left: 30px;
@@ -466,7 +464,6 @@ main {
 }
 
 .accommodation h1 {
-	margin-bottom: 15px;
 	background-color: #F2F2F2;
 	font-size: large;
 	font-weight: bold;
@@ -477,16 +474,15 @@ main {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	width: 100%;
-	height: 70%;
-	margin-top: 30px;
-	margin-bottom: 25px;
+	height: 70%;	
+	margin-bottom: 30px;
 	background-color: #F2F2F2;
 }
 
 .section_card_accommodation {
 	width: 30%;
-	height: 140px;
-	margin-bottom: 20px;
+	height: 150px;
+	margin-top: 20px;
 	border-style: none;
 	border-radius: 16px;
 	background: #FFFFFF
@@ -507,7 +503,7 @@ main {
 	width: 100%;
 	height: 40%;
 	padding-top: 2px;
-	padding-left: 8px;
+	padding-left: 10px;
 	border-style: none;
 	border-radius: 16px;
 	border-top-left-radius: 0;
@@ -534,6 +530,7 @@ main {
 	display: flex;
 	justify-content: flex-start;
 	width: 30%;
+	font-size: x-small;
 	color: #0065FC;
 }
 
@@ -583,14 +580,14 @@ main {
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
-	height: 90%;
+	height: 100%;
 	margin-top: 20px;
 }
 
 .section_card_activities1,
 .section_card_activities4 {
 	width: 22.5%;
-	height: auto;
+	height: 350px;
 	box-shadow: 0 8px 4px #F2F2F2;
 	border-style: none;
 	border-radius: 16px;
@@ -601,7 +598,7 @@ main {
 	flex-direction: column;
 	justify-content: space-between;
 	width: 22.5%;
-	height: 250px;
+	height: 350px;
 }
 
 .section_card_activities2,
@@ -639,7 +636,7 @@ main {
 
 .section_card_activities_image_mini {
 	width: 100%;
-	height: 75%;
+	height: 80%;
 	object-fit: cover; /* In order to keeps the aspect and fill the given dimentions */
 	border-style: none;
 	border-radius: 16px;
@@ -657,9 +654,9 @@ main {
 	border-top-right-radius: 0;
 }
 
-.section_card_activities_description_mini {
+.section_card_activities_description_mini  {
 	width: 100%;
-	height: 20%;
+	height: 15%;
 	padding: 5px;
 	border-style: none;
 	border-radius: 16px;
@@ -669,16 +666,16 @@ main {
 
 .section_card_activities_description h2,
 .section_card_activities_description_mini h2 {
+	margin-left: 12px;
 	font-size: medium;
 	font-weight: bold;
 }
 
-/* This is only working for the last card */
-.section_card_activities1,
-.section_card_activities2,
-.section_card_activities3,
-.section_card_activities4,
-.section_card_activities5,
+.section_card_activities1:hover,
+.section_card_activities2:hover,
+.section_card_activities3:hover,
+.section_card_activities4:hover,
+.section_card_activities5:hover,
 .section_card_activities6:hover {
 	transform: scale(1.1);
 	box-shadow: 0 8px 4px #F2F2F2;
@@ -694,24 +691,24 @@ footer {
 	display: flex;
 	justify-content: flex-start;
 	width: 100%;
-	height: 11%;
+	height:11%;
 	background-color: #F2F2F2;
 }
 
 .à_propos {
 	margin-right: 80px;
-	padding: 34px;
+	padding: 30px;
 	background-color: #F2F2F2;
 }
 
 .nos_hébergements {
 	margin-right: 180px;
-	padding: 34px;
+	padding: 30px;
 	background-color: #F2F2F2;
 }
 
 .assistance {
-	padding: 34px;
+	padding: 30px;
 	background-color: #F2F2F2;
 }
 
@@ -737,6 +734,7 @@ footer {
 	background-color: #F2F2F2;
 	font-size: medium;
 }
+
 .à_propos ul li a,
 .nos_hébergements ul li a,
 .assistance ul li a {
@@ -745,21 +743,56 @@ footer {
 	color: black;
 }
 
-/* Tablet version */
-
+/***** Tablet version *****/
 @media screen and (max-width:992px) {
+
+	
+	/* Header aspect */
+	nav ul li {
+		font-size: small;
+	}
+
+	/* Search section aspect */
+	.search h1 {
+		font-size: medium;
+	}
+
+	.search p {
+		font-size: small;
+	}
 	
 	form {
-		width: 50%;
+		width: 40%;
+	}
+
+	.search_form::placeholder {
+		font-size: small;
+	}
+
+	.search_button {
+		font-size: small;
 	}
 
 	.filter {
 		width: 100%;
 	}
 
+	.filter_title {
+		font-size: small;
+	}
+
+	.filter_button {
+		font-size: small;
+	}
+	/* Main section aspect */
+	/* Section popular aspect */
 	.popular {
-	width: 28%;
-	padding: 20px;
+		width: 28%;
+		padding: 20px;
+	}
+
+	.section_title_popular h1 {
+		font-size: medium;
 	}
 
 	.section_card_popular_description {
@@ -771,13 +804,18 @@ footer {
 	}
 	
 	.section_card_popular_description p {
-		margin-bottom: 5px;
+		margin-bottom: 25px; /* Still need to check the place of the stars icons */
 		font-size: x-small;
+	}	
+
+	/* Section accommodation aspect */
+	.accommodation {
+		width: 61%;
+		padding: 20px;
 	}
 
-	.accommodation {
-		width: 60%;
-		padding: 20px;
+	.accommodation h1 {
+		font-size: medium;
 	}
 
 	.section_card_accommodation_description h2 {
@@ -788,32 +826,61 @@ footer {
 		font-size: x-small;
 	}
 
+	/* Section activities aspect */
+	.activities h1 {
+		font-size: medium;
+	}
+
 	.section_card_activities_description h2,
 	.section_card_activities_description_mini h2 {
+		margin-left: 6px;
+		font-size: small;
+	}
+
+	.section_card_activities_description_mini h2 {
+		margin-top: 4px;
+	}
+
+	/* Footer aspect */
+
+	.nos_hébergements {
+		margin-right: 80px;
+	}
+
+	.à_propos h3,
+	.nos_hébergements h3,
+	.assistance h3 {
+		font-size: small;
+	}
+
+	.à_propos ul li,
+	.nos_hébergements ul li,
+	.assistance ul li {
 	font-size: small;
 	}
 }
 
-/* Mobile version */
-
-/* Header aspect */
-
+/***** Mobile version *****/
 @media screen and (max-width:768px) {
+	
+	/* Header aspect */
 	header {
 		flex-direction: column;
-		justify-content: center;
-		background-color: #000;
 	}
 
 	.logo_booki {
 		width: 25%;
+		margin: auto;
 	}
 
 	nav {
 		width: 100%;
+		margin: auto;
 	}
 
 	nav ul li {
+		width: 100%;	
+		padding-top: 30px;	
 		padding-bottom: 10px;
 		padding-left: 70px;
 		padding-right: 70px;
@@ -828,8 +895,6 @@ footer {
 	/* Search section aspect */
 	.search {
 		width: 100%;
-		height: auto;
-		
 	}
 
 	.search h1,
@@ -840,8 +905,22 @@ footer {
 		margin-left: 0;
 	}
 
+
 	form {
 		width: 100%;
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+
+	#location_icon {
+		width: 45px;
+		height: 45px;
+		padding: 16px;
+	}
+	
+	.search_form {
+		width: 70%;
+		height: 45px;		
 	}
 
 	.search_button {
@@ -850,6 +929,8 @@ footer {
 
 	.search_icon {
 		display: block;
+		width: 45px;
+		height: 45px;
 	}
 
 	#search_icon {
@@ -864,6 +945,7 @@ footer {
 
 	.filter_title {
 		width: 100%;
+		margin-bottom: 15px;
 	}
 
 	.filter_button {
@@ -873,17 +955,41 @@ footer {
 		padding-right: 10px;
 	}
 
+	.info p {
+		margin-left: 15px;
+	}
+
 	/* Main section aspect */
 	main {
 		flex-direction: column;
-		height: auto;
 	}
 
+	/* Section popular aspect */
 	.popular {
 		width: 100%;
+		padding-top: 30px;
+		padding-bottom: 30px;
 		border-radius: 0;
 	}
 
+	.section_title_popular {
+		margin-bottom: 30px;
+	}
+
+	.section_card_popular {
+		height: 140px;
+		margin-top: 10px;
+	}
+
+	.section_card_popular_description {
+		padding: 16px;
+	}
+	
+	.section_card_popular_description p {
+		margin-bottom: 50px;
+	}	
+
+	/* Section accommodation aspect */
 	.accommodation {
 		width: 100%;
 		margin-left: 0;
@@ -891,24 +997,24 @@ footer {
 	}
 
 	.accommodation h1 {
-		background-color: #FFFFFF;
-	}
-
-	.section_cards_accommodation {
+		margin-top: 20px;
 		background-color: #FFFFFF;
 	}
 
 	.section_cards_accommodation {
 		flex-direction: column;
 		width: 100%;
-		height: auto;
+		margin-top: 20px;
+		background-color: #FFFFFF;
 	}
 
 	.section_card_accommodation {
-		width: 100%;
-		height: 180px;
+		width: 95%;
+		height: 180px;	
+		margin: auto;	
+		margin-bottom: 15px;
 		box-shadow: 0 8px 4px #F2F2F2;
-	}
+	}	
 
 	.show_more {
 		background-color: #FFFFFF;
@@ -918,28 +1024,23 @@ footer {
 		background-color: #FFFFFF;
 	}
 
-
-	/* Section activities aspect */
-	.activities {
-		height: auto;
-	}
-
+	/* Section activities aspect */	
 	.section_cards_activities {
 		flex-direction: column;
 		width: 100%;
-		height: auto;
 	}
 
 	.section_card_activities1,
 	.section_card_activities4 {
 		width: 100%;
 		height: 180px;
-		margin-bottom: 50px;
+		margin-bottom: 20px;
 	}
 
 	.section_card_activities_mini {
 		width: 100%;
 		height: auto;
+		margin-bottom: 20px;
 	}
 
 	.section_card_activities2,
@@ -952,6 +1053,16 @@ footer {
 	.section_card_activities5 {
 		width: 100%;
 		height: 180px;
+	}
+
+	.section_card_activities_image,
+	.section_card_activities_image_mini {
+	height: 80%;
+	}
+
+	.section_card_activities_description,
+	.section_card_activities_description_mini {
+		height: 20%;
 	}
 
 	/* Footer aspect */
