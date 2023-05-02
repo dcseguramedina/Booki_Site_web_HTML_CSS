@@ -10,8 +10,8 @@
 
 ## Spécifications techniques
 
-- Privilégier l’utilisation des classes CSS pour cibler un élément
 - Le code HTML ne doit pas contenir de propriété CSS
+- Privilégier l’utilisation des classes CSS pour cibler un élément
 - Il est recommandé d'utiliser Flexbox
 - Le code doit être valide aux validateurs W3C HTML et CSS
 - Le site doit être compatible avec les dernières versions de Google Chrome et de Mozilla Firefox
