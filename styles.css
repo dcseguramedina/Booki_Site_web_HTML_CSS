@@ -423,7 +423,7 @@ main {
 	width: 40%;
 	height: auto;
 	padding: 4px;
-	object-fit: cover; /* In order to keeps the aspect and fill the given dimentions  */	
+	object-fit: cover;	
 	border-style: none;
 	border-radius: 16px;
 	border-top-right-radius: 0;
@@ -507,7 +507,7 @@ main {
 	width: 97%;
 	height: 60%;
 	padding: 4px;
-	object-fit: cover; /* In order to keeps the aspect and fill the given dimentions */
+	object-fit: cover; 
 	border-style: none;
 	border-radius: 16px;
 	border-bottom-left-radius: 0;
@@ -659,7 +659,7 @@ main {
 .section_card_activities_image,
 .section_card_activities_image_mini,
 .section_card_activities_image_mini1 {
-	object-fit: cover; /* In order to keeps the aspect and fill the given dimentions */
+	object-fit: cover; 
 	border-style: none;
 	border-radius: 16px;
 	border-bottom-left-radius: 0;
