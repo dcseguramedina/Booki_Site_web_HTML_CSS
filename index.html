@@ -1,311 +1,303 @@
-<!-- Prototype New Booki site -->
-
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./Segura_Medina_Diana_Catalina_2_styles_102022/styles.css">
     <script src="https://kit.fontawesome.com/991beb3e09.js" crossorigin="anonymous"></script>
     <title>Booki, trouvez votre hébergement</title>
 </head>
-
 <body>
     <!-- Definition of the header content -->
     <header>
-        <div class="logo_booki">
-            <img class="logo_booki_image" src="./images/logo/Booki.png" alt="Logo de Booki">
+        <div class="navigation_menu">
+            <div class="logo_booki"> 
+                <img class="logo_booki_image" src="./Segura_Medina_Diana_Catalina_3_images_102022/logo/Booki.png" alt="Logo de Booki">
+            </div>
+            <nav>
+                <!--The texts "Accommodations" and "Activities", located in the header, are links. They lead respectively to the section "Accommodation in Marseille" and "Activities in Marseille" -->
+                <ul>
+                    <li><a href="#accommodation">Hébergement</a></li>
+                    <li><a href="#activities">Activités</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <!--The texts "Accommodations" and "Activities", located in the header, are links. They lead respectively to the section "Accommodation in Marseille" and "Activities in Marseille" -->
-            <ul>
-                <li><a href="#accommodation">Hébergement</a></li>
-                <li><a href="#activities">Activités</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- The search field is an input field, the text is editable by the user. The research part is not functional as requested -->
-    <section class="search">
-        <h1>Trouvez votre hébergement pour les vacances de rêve</h1>
-        <p>En plein centre ville ou en pleine nature</p>
-        <form>
-            <!-- The icons you will find along the site come from the Font Awesome library. We could't go through a CDN as indicated because the icons were downloading in the wrong way -->
-            <i id=search_location_icon class="fa-solid fa-location-dot"></i>
-            <input class="search_form" type="search" placeholder="Marseille, France">
-            <button class="search_button" type="button">Rechercher</button>
-            <button class="search_magnifying-glass_icon" type="button"><i id="search_mg_icon"
-                    class="fa-solid fa-magnifying-glass"></i></button>
-        </form>
-        <!-- Filters change their appearance on hover. However, they are not functional as requested -->
-        <div class="filter">
-            <h2 class="filter_title">Filtres</h2>
-            <button class="filter_button" type="button"><i id="economic"
-                    class="fa-solid fa-money-bill-wave"></i>Économique</button>
-            <button class="filter_button" type="button"><i id="family_friendly"
-                    class="fa-sharp fa-solid fa-child-reaching"></i>Familial</button>
-            <button class="filter_button" type="button"><i id="romantic"
-                    class="fa-sharp fa-solid fa-heart"></i>Romantique</button>
-            <button class="filter_button" type="button"><i id="pets_friendly"
-                    class="fa-sharp fa-solid fa-dog"></i>Animaux autorisés</button>
-        </div>
-        <div class="info">
-            <i id="info_icon" class="fa-solid fa-info"></i>
-            <p>Plus de 500 logements sont disponibles dans cette ville</p>
-        </div>
-    </section>
-
+        <!-- The search field is an input field, the text is editable by the user. The research part is not functional as requested -->
+        <section class="search">
+            <h1>Trouvez votre hébergement pour les vacances de rêve</h1>
+            <p>En plein centre ville ou en pleine nature</p>
+            <form>
+                <!-- The icons you will find along the site come from the Font Awesome library. We could't go through a CDN as indicated because the icons were downloading in the wrong way -->
+                <i id=search_location_icon class="fa-solid fa-location-dot"></i>
+                <input class="search_form" type="search" placeholder="Marseille, France">
+                <button class="search_button" type="button"><span id="search_text">Rechercher</span><i id="search_icon"
+                        class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <!-- Filters change their appearance on hover. However, they are not functional as requested -->
+            <div class="filter">
+                <h2 class="filter_title">Filtres</h2>
+                <button class="filter_button" type="button"><i id="economic"
+                        class="fa-solid fa-money-bill-wave"></i>Économique</button>
+                <button class="filter_button" type="button"><i id="family_friendly"
+                        class="fa-sharp fa-solid fa-child-reaching"></i>Familial</button>
+                <button class="filter_button" type="button"><i id="romantic"
+                        class="fa-sharp fa-solid fa-heart"></i>Romantique</button>
+                <button class="filter_button" type="button"><i id="pets_friendly"
+                        class="fa-sharp fa-solid fa-dog"></i>Animaux autorisés</button>
+            </div>
+            <div class="info">
+                <i id="info_icon" class="fa-solid fa-info"></i>
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
+        </section>
+    </header>  
     <!-- Definition of the main section content -->
     <main>
         <!-- Definition of the popular section content -->
-        <section class="popular">
-            <div class="section_title_popular">
-                <h1>Les plus populaires</h1>
-                <i id="star_icon_popular" class="fa-solid fa-star"></i>
-            </div>
-            <div class="section_card_popular">
-                <img class="section_card_popular_image"
-                    src="./images/accomodation/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
-                    alt="Photo de chambre Hôtel Le soleil du matin">
-                <div class="section_card_popular_description">
-                    <h2>Hôtel Le soleil du matin</h2>
-                    <p>Nuit à partir de 128€</p>
-                    <div class="stars_icon_popular">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
+        <div class="accommodation_popular">
+            <section class="popular">
+                <div class="section_title_popular">
+                    <h1>Les plus populaires</h1>
+                    <i id="star_icon_popular" class="fa-solid fa-star"></i>
+                </div>
+                <article class="section_card_popular">
+                    <img class="section_card_popular_image"
+                        src="./Segura_Medina_Diana_Catalina_3_images_102022/accomodation/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                        alt="Photo de chambre Hôtel Le soleil du matin">
+                    <div class="section_card_popular_description">
+                        <h2>Hôtel Le soleil du matin</h2>
+                        <p>Nuit à partir de 128€</p>
+                        <div class="stars_icon_popular">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
                     </div>
-                </div>
-            </div>
-
-            <div class="section_card_popular">
-                <img class="section_card_popular_image"
-                    src="./images/accomodation/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
-                    alt="Photo de chambre Au coeur de l'eau Chambres d'hôtes">
-                <div class="section_card_popular_description">
-                    <h2>Au coeur de l'eau Chambres d'hôtes</h2>
-                    <p>Nuit à partir de 71€</p>
-                    <div class="stars_icon_popular">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i id="stars_icon_popular_gray1" class="fa-solid fa-star"></i>
+                </article>
+                <article class="section_card_popular">
+                    <img class="section_card_popular_image"
+                        src="./Segura_Medina_Diana_Catalina_3_images_102022/accomodation/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
+                        alt="Photo de chambre Au coeur de l'eau Chambres d'hôtes">
+                    <div class="section_card_popular_description">
+                        <h2>Au coeur de l'eau Chambres d'hôtes</h2>
+                        <p>Nuit à partir de 71€</p>
+                        <div class="stars_icon_popular">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i id="stars_icon_popular_gray1" class="fa-solid fa-star"></i>
+                        </div>
                     </div>
-                </div>
-            </div>
-
-            <div class="section_card_popular">
-                <img class="section_card_popular_image"
-                    src="./images/accomodation/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
-                    alt="Photo de chambre Hôtel Tout bleu et Blanc">
-                <div class="section_card_popular_description">
-                    <h2>Hôtel Tout bleu et Blanc</h2>
-                    <p>Nuit à partir de 68€</p>
-                    <div class="stars_icon_popular">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i id="stars_icon_popular_gray2" class="fa-solid fa-star"></i>
+                </article>
+                <article class="section_card_popular">
+                    <img class="section_card_popular_image"
+                        src="./Segura_Medina_Diana_Catalina_3_images_102022/accomodation/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+                        alt="Photo de chambre Hôtel Tout bleu et Blanc">
+                    <div class="section_card_popular_description">
+                        <h2>Hôtel Tout bleu et Blanc</h2>
+                        <p>Nuit à partir de 68€</p>
+                        <div class="stars_icon_popular">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i id="stars_icon_popular_gray2" class="fa-solid fa-star"></i>
+                        </div>
                     </div>
+                </article>
+            </section>
+            <!-- Definition of the accommodation section content -->
+            <!-- Each accommodation card is clickable in its entirety and change its appearance on hover. For now, the links are empty as requested -->
+            <section class="accommodation">
+                <h1 id="accommodation">Hébergements à Marseille</h1>
+                <div class="section_cards_accommodation">
+                    <article class="section_card_accommodation">
+                        <a href="#">
+                            <img class="section_card_accommodation_image"
+                                src="./Segura_Medina_Diana_Catalina_3_images_102022/accomodation/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                                alt="Photo de chambre Auberge La Cannebiére">
+                            <div class="section_card_accommodation_description">
+                                <h2>Auberge La Cannebiére</h2>
+                                <p>Nuit à partir de <strong>25€</strong></p>
+                                <div class="stars_icon_accommodation">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i id="stars_icon_accommodation_gray1" class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="section_card_accommodation">
+                        <a href="#">
+                            <img class="section_card_accommodation_image"
+                                src="./Segura_Medina_Diana_Catalina_3_images_102022/accomodation/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+                                alt="Photo de chambre Hôtel du port">
+                            <div class="section_card_accommodation_description">
+                                <h2>Hôtel du port</h2>
+                                <p>Nuit à partir de 52€</p>
+                                <div class="stars_icon_accommodation">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="section_card_accommodation">
+                        <a href="#">
+                            <img class="section_card_accommodation_image"
+                                src="./Segura_Medina_Diana_Catalina_3_images_102022/accomodation/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                                alt="Photo de chambre Hôtel Les mouettes">
+                            <div class="section_card_accommodation_description">
+                                <h2>Hôtel Les mouettes</h2>
+                                <p>Nuit à partir de 76€</p>
+                                <div class="stars_icon_accommodation">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i id="stars_icon_accommodation_gray2" class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="section_card_accommodation">
+                        <a href="#">
+                            <img class="section_card_accommodation_image"
+                                src="./Segura_Medina_Diana_Catalina_3_images_102022/accomodation/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                                alt="Photo de chambre Hôtel de la mer">
+                            <div class="section_card_accommodation_description">
+                                <h2>Hôtel de la mer</h2>
+                                <p>Nuit à partir de 46€</p>
+                                <div class="stars_icon_accommodation">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i id="stars_icon_accommodation_gray3" class="fa-solid fa-star"></i>
+                                    <i id="stars_icon_accommodation_gray4" class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="section_card_accommodation">
+                        <a href="#">
+                            <img class="section_card_accommodation_image"
+                                src="./Segura_Medina_Diana_Catalina_3_images_102022/accomodation/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+                                alt="Photo de chambre Auberge Le Panier">
+                            <div class="section_card_accommodation_description">
+                                <h2>Auberge Le Panier</h2>
+                                <p>Nuit à partir de <strong>23€</strong></p>
+                                <div class="stars_icon_accommodation">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i id="stars_icon_accommodation_gray5" class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="section_card_accommodation">
+                        <a href="#">
+                            <img class="section_card_accommodation_image"
+                                src="./Segura_Medina_Diana_Catalina_3_images_102022/accomodation/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+                                alt="Photo de chambre Hôtel chez Amina">
+                            <div class="section_card_accommodation_description">
+                                <h2>Hôtel chez Amina</h2>
+                                <p>Nuit à partir de 96€</p>
+                                <div class="stars_icon_accommodation">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+                <div class="accommodation_show_more"><a href="#">Afficher plus</a></div>
+            </section>
+        </div>
+        <!-- Definition of the activities section content -->
+        <!-- Each activities card is clickable in its entirety and change its appearance on hover. For now, the links are empty as requested-->
+        <section class="activities">
+            <h1 id="activities">Activités à Marseille</h1>
+            <div class="section_cards_activities">
+                <article class="section_card_activities1">
+                    <a href="#">
+                        <img class="section_card_activities_image"
+                            src="./Segura_Medina_Diana_Catalina_3_images_102022/activities/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                            alt="Photo du Vieux Port">
+                        <div class="section_card_activities_description">
+                            <h2>Vieux Port</h2>
+                        </div>
+                    </a>
+                </article>
+                <div class="section_card_activities_mini">
+                    <article class="section_card_activities2">
+                        <a href="#">
+                            <img class="section_card_activities_image_mini"
+                                src="./Segura_Medina_Diana_Catalina_3_images_102022/activities/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                                alt="Photo du Fort de Pomégues">
+                            <div class="section_card_activities_description_mini">
+                                <h2>Fort de Pomègues</h2>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="section_card_activities3">
+                        <a href="#">
+                            <img class="section_card_activities_image_mini1"
+                                src="./Segura_Medina_Diana_Catalina_3_images_102022/activities/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+                                alt="Photo des Îles du Frioul">
+                            <div class="section_card_activities_description_mini1">
+                                <h2>Îles du Frioul</h2>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+                <article class="section_card_activities4">
+                    <a href="#">
+                        <img class="section_card_activities_image"
+                            src="./Segura_Medina_Diana_Catalina_3_images_102022/activities/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                            alt="Photo du Parc National des Calanques">
+                        <div class="section_card_activities_description">
+                            <h2>Parc National des Calanques</h2>
+                        </div>
+                    </a>
+                </article>
+                <div class="section_card_activities_mini">
+                    <article class="section_card_activities5">
+                        <a href="#">
+                            <img class="section_card_activities_image_mini1"
+                                src="./Segura_Medina_Diana_Catalina_3_images_102022/activities/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                                alt="Photo de Notre-Dame-de-la-Garde">
+                            <div class="section_card_activities_description_mini1">
+                                <h2>Notre-Dame-de-la-Garde</h2>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="section_card_activities6">
+                        <a href="#">
+                            <img class="section_card_activities_image_mini"
+                                src="./Segura_Medina_Diana_Catalina_3_images_102022/activities/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+                                alt="Photo du Parc Longchamp">
+                            <div class="section_card_activities_description_mini">
+                                <h2>Parc Longchamp</h2>
+                            </div>
+                        </a>
+                    </article>
                 </div>
             </div>
-        </section>
-
-        <!-- Definition of the accommodation section content -->
-        <!-- Each accommodation card is clickable in its entirety and change its appearance on hover. For now, the links are empty as requested -->
-        <section class="accommodation">
-            <h1 id="accommodation">Hébergements à Marseille</h1>
-            <div class="section_cards_accommodation">
-                <div class="section_card_accommodation">
-                    <a href="#">
-                        <img class="section_card_accommodation_image"
-                            src="./images/accomodation/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
-                            alt="Photo de chambre Auberge La Cannebiére">
-                        <div class="section_card_accommodation_description">
-                            <h2>Auberge La Cannebiére</h2>
-                            <p>Nuit à partir de <strong>25€</strong></p>
-                            <div class="stars_icon_accommodation">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i id="stars_icon_accommodation_gray1" class="fa-solid fa-star"></i>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="section_card_accommodation">
-                    <a href="#">
-                        <img class="section_card_accommodation_image"
-                            src="./images/accomodation/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
-                            alt="Photo de chambre Hôtel du port">
-                        <div class="section_card_accommodation_description">
-                            <h2>Hôtel du port</h2>
-                            <p>Nuit à partir de 52€</p>
-                            <div class="stars_icon_accommodation">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="section_card_accommodation">
-                    <a href="#">
-                        <img class="section_card_accommodation_image"
-                            src="./images/accomodation/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
-                            alt="Photo de chambre Hôtel Les mouettes">
-                        <div class="section_card_accommodation_description">
-                            <h2>Hôtel Les mouettes</h2>
-                            <p>Nuit à partir de 76€</p>
-                            <div class="stars_icon_accommodation">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i id="stars_icon_accommodation_gray2" class="fa-solid fa-star"></i>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="section_card_accommodation">
-                    <a href="#">
-                        <img class="section_card_accommodation_image"
-                            src="./images/accomodation/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
-                            alt="Photo de chambre Hôtel de la mer">
-                        <div class="section_card_accommodation_description">
-                            <h2>Hôtel de la mer</h2>
-                            <p>Nuit à partir de 46€</p>
-                            <div class="stars_icon_accommodation">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i id="stars_icon_accommodation_gray3" class="fa-solid fa-star"></i>
-                                <i id="stars_icon_accommodation_gray4" class="fa-solid fa-star"></i>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="section_card_accommodation">
-                    <a href="#">
-                        <img class="section_card_accommodation_image"
-                            src="./images/accomodation/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
-                            alt="Photo de chambre Auberge Le Panier">
-                        <div class="section_card_accommodation_description">
-                            <h2>Auberge Le Panier</h2>
-                            <p>Nuit à partir de <strong>23€</strong></p>
-                            <div class="stars_icon_accommodation">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i id="stars_icon_accommodation_gray5" class="fa-solid fa-star"></i>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="section_card_accommodation">
-                    <a href="#">
-                        <img class="section_card_accommodation_image"
-                            src="./images/accomodation/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
-                            alt="Photo de chambre Hôtel chez Amina">
-                        <div class="section_card_accommodation_description">
-                            <h2>Hôtel chez Amina</h2>
-                            <p>Nuit à partir de 96€</p>
-                            <div class="stars_icon_accommodation">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="accommodation_show_more"><a href="#">Afficher plus</a></div>
         </section>
     </main>
-
-    <!-- Definition of the activities section content -->
-    <!-- Each activities card is clickable in its entirety and change its appearance on hover. For now, the links are empty as requested-->
-    <section class="activities">
-        <h1 id="activities">Activités à Marseille</h1>
-        <div class="section_cards_activities">
-            <div class="section_card_activities1">
-                <a href="#">
-                    <img class="section_card_activities_image"
-                        src="./images/activities/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
-                        alt="Photo du Vieux Port">
-                    <div class="section_card_activities_description">
-                        <h2>Vieux Port</h2>
-                    </div>
-                </a>
-            </div>
-            <div class="section_card_activities_mini">
-                <div class="section_card_activities2">
-                    <a href="#">
-                        <img class="section_card_activities_image_mini"
-                            src="./images/activities/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
-                            alt="Photo du Fort de Pomégues">
-                        <div class="section_card_activities_description_mini">
-                            <h2>Fort de Pomègues</h2>
-                        </div>
-                    </a>
-                </div>
-                <div class="section_card_activities3">
-                    <a href="#">
-                        <img class="section_card_activities_image_mini"
-                            src="./images/activities/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
-                            alt="Photo des Îles du Frioul">
-                        <div class="section_card_activities_description_mini">
-                            <h2>Îles du Frioul</h2>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="section_card_activities4">
-                <a href="#">
-                    <img class="section_card_activities_image"
-                        src="./images/activities/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
-                        alt="Photo du Parc National des Calanques">
-                    <div class="section_card_activities_description">
-                        <h2>Parc National des Calanques</h2>
-                    </div>
-                </a>
-            </div>
-            <div class="section_card_activities_mini">
-                <div class="section_card_activities5">
-                    <a href="#">
-                        <img class="section_card_activities_image_mini"
-                            src="./images/activities/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
-                            alt="Photo de Notre-Dame-de-la-Garde">
-                        <div class="section_card_activities_description_mini">
-                            <h2>Notre-Dame-de-la-Garde</h2>
-                        </div>
-                    </a>
-                </div>
-                <div class="section_card_activities6">
-                    <a href="#">
-                        <img class="section_card_activities_image_mini"
-                            src="./images/activities/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
-                            alt="Photo du Parc Longchamp">
-                        <div class="section_card_activities_description_mini">
-                            <h2>Parc Longchamp</h2>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Definition of the footer content -->
     <footer>
         <div class="à_propos">
@@ -331,7 +323,5 @@
             </ul>
         </div>
     </footer>
-
 </body>
-
 </html>
